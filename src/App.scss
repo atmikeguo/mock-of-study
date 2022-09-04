@@ -1,4 +1,5 @@
-@import "~bootstrap/scss/bootstrap";
+
+@import "../node_modules/bootstrap/scss/bootstrap";
 
 #root .my-container {
   color: #fff;
@@ -70,7 +71,7 @@
     linear-gradient(136.53deg, #366eff, #46bfe4 99.76%);
   background-clip: padding-box, border-box;
   background-origin: padding-box, border-box;
-  box-shadow: 0 0 120px rgb(94 120 255 / 24%);
+  box-shadow: 0 0 120px rgba(94,120,255,0.24);
   border-radius: 12px;
   padding: 0 !important;
 }
