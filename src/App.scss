@@ -1,0 +1,167 @@
+@import "~bootstrap/scss/bootstrap";
+
+#root .my-container {
+  color: #fff;
+  box-sizing: border-box;
+  min-height: calc(100vh - var(--menuHeight) - var(--footerHeight));
+  overflow: hidden;
+  background: radial-gradient(100% 100% at 50% 0, #173e8e 0, #111e38 100%);
+  padding: 2rem 2rem;
+  margin: 0;
+}
+
+@include media-breakpoint-up(sm) {
+  #root .my-container {
+    padding: 4rem 4rem;
+  }
+}
+@include media-breakpoint-up(md) {
+  #root .my-container {
+    padding: 5rem 8rem;
+  }
+}
+@include media-breakpoint-up(lg) {
+  #root .my-container {
+    padding: 6rem 16rem;
+  }
+}
+
+.my-card {
+  background-color: rgba(0, 0, 0, 0.1215686275);
+  margin-bottom: 5px;
+  border-radius: 0.9rem;
+  @include media-breakpoint-up(sm) {
+    border-radius: 1.1rem;
+  }
+  @include media-breakpoint-up(md) {
+    border-radius: 1.3rem;
+  }
+  @include media-breakpoint-up(lg) {
+    border-radius: 1.5rem;
+  }
+}
+
+.panel-title {
+  color: #9f9f9f;
+  margin-bottom: 5px;
+  line-height: 1;
+}
+
+.panel-value {
+  font-size: 34px;
+  font-weight: bolder;
+  font-family: Oswald;
+  line-height: 1;
+}
+
+.my-chart{
+  height: 25rem;
+}
+
+#root .my-table-title {
+  color: #9f9f9f;
+  padding: 20px 0;
+  line-height: 1;
+}
+
+#root .my-table-container {
+  border: 1px solid transparent;
+  background-image: radial-gradient(#2a51a1 5%, #173d8a 95%),
+    linear-gradient(136.53deg, #366eff, #46bfe4 99.76%);
+  background-clip: padding-box, border-box;
+  background-origin: padding-box, border-box;
+  box-shadow: 0 0 120px rgb(94 120 255 / 24%);
+  border-radius: 12px;
+  padding: 0 !important;
+}
+
+#root .my-table {
+  color: #fff;
+  margin-bottom: 0;
+  text-align: right;
+}
+
+#root .my-table th,
+#root .my-table tr {
+  height: 40px;
+}
+
+#root .my-table thead th {
+  vertical-align: middle;
+}
+
+#root .my-table tr > * {
+  padding: 0 12px;
+  vertical-align: middle;
+}
+
+#root .my-table tr :first-child {
+  text-align: left;
+}
+
+#root .my-table th {
+  border-top: 0;
+  border-bottom: 0 !important;
+  color: hsla(0, 0%, 100%, 0.41568627450980394);
+  font-size: 14px;
+  font-weight: 500;
+  font-style: normal;
+  font-family: Alibaba, Roboto, "sans-serif";
+}
+
+#root .my-table td {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+}
+#root .my-table tbody tr:first-child td {
+  border-top: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.order-icons-wrapper {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  height: 14px;
+  width: 24px;
+  vertical-align: middle;
+  cursor: pointer;
+  overflow: initial;
+  position: relative;
+}
+
+.corder-icon {
+  width: 0;
+  height: 0;
+  border: 5px solid transparent;
+  position: absolute;
+  left: 7px;
+}
+
+.ascending-icon {
+  border-bottom-color: #a8abb2;
+  top: -5px;
+}
+
+.descending-icon {
+  border-top-color: #a8abb2;
+  bottom: -3px;
+}
+
+.ascending-icon-selected {
+  border-bottom-color: #366eff;
+}
+
+.descending-icon-selected {
+  border-top-color: #366eff;
+}
+
+#root .my-table tbody tr:hover td {
+  background-color: rgba(255, 255, 255, 0.1);
+  color: white;
+}
+
+.icon-img{
+  width: 1.5rem;
+  height: 1.5rem;
+  margin-right: 1rem;
+  border-radius: 100%;
+}
